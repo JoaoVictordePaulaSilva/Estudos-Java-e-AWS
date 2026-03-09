@@ -9,7 +9,7 @@ Permite que uma classe (filha/subclasse) herde atributos e métodos de outra cla
 
 Java
 
-```
+```java
 public class Funcionario {
     protected String nome;
     protected double salario;
@@ -36,7 +36,7 @@ A capacidade de um objeto ser referenciado de várias formas. Uma variável do t
 
 Java
 
-```
+```java
 Funcionario f1 = new Gerente(); // Referência genérica, objeto específico
 System.out.println(f1.getBonus()); // Executa a versão do Gerente (Sobrescrita)
 ```
@@ -47,7 +47,7 @@ Verifica se um objeto é de um determinado tipo antes de realizar um cast (conve
 
 Java
 
-```
+```java
 if (f1 instanceof Gerente) {
     Gerente g = (Gerente) f1; // Downcast seguro
     System.out.println("É um gerente");
@@ -78,7 +78,7 @@ Dois conceitos frequentemente confundidos, mas com propósitos distintos.
 
 Java
 
-```
+```java
 public class Calculadora {
     // Sobrecarga de método
     public int somar(int a, int b) { return a + b; }

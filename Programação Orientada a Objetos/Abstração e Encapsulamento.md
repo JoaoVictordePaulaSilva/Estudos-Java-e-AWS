@@ -11,9 +11,8 @@ A abstração consiste em isolar propriedades essenciais de um objeto, ignorando
 - **Métodos:** Comportamentos (funções).
     
 
-Java
 
-```
+```java
 public class ContaBancaria {
     // Atributos
     String titular;
@@ -49,7 +48,7 @@ Usados para ler e modificar atributos `private` de forma controlada.
 
 Java
 
-```
+```java
 public class Usuario {
     private String senha; // Ninguém acessa diretamente
 
@@ -77,7 +76,7 @@ O construtor define como o objeto deve "nascer". O `this` referencia o atributo 
 
 Java
 
-```
+```java
 public class Produto {
     private String nome;
 
@@ -101,7 +100,7 @@ Ideal para classes que servem apenas como "transportadoras de dados" (DTOs). Sã
 
 Java
 
-```
+```java
 // Declaração em uma única linha
 public record Cliente(String nome, String cpf) {}
 

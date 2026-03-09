@@ -5,13 +5,13 @@
 
 ## 1. Configuração e Inicialização
 
-|**Comando**|**Descrição**|
-|---|---|
-|`git config --global user.name "Nome"`|Define o nome de usuário globalmente.|
-|`git config --global user.email "email@exemplo.com"`|Define o e-mail do usuário globalmente.|
-|**`git init`**|Inicializa um novo repositório Git local na pasta atual.|
-|**`git remote add origin <url>`**|Vincula o repositório local a um repositório remoto (ex: GitHub).|
-|`git remote -v`|Lista os repositórios remotos vinculados.|
+| **Comando**                                          | **Descrição**                                                     |
+| ---------------------------------------------------- | ----------------------------------------------------------------- |
+| `git config --global user.name "Nome"`               | Define o nome de usuário globalmente.                             |
+| `git config --global user.email "email@exemplo.com"` | Define o e-mail do usuário globalmente.                           |
+| **`git init`**                                       | Inicializa um novo repositório Git local na pasta atual.          |
+| **`git remote add origin <url>`**                    | Vincula o repositório local a um repositório remoto (ex: GitHub). |
+| `git remote -v`                                      | Lista os repositórios remotos vinculados.                         |
 
 ## 2. Fluxo de Trabalho Local (Snapshot)
 

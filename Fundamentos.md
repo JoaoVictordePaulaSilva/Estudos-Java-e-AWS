@@ -17,7 +17,7 @@ A porta de entrada de qualquer aplicação Java.
 
 Java
 
-```
+```java
 package com.projeto.aula; // Definição do pacote
 
 import java.util.Scanner; // Import da classe Scanner
@@ -118,7 +118,7 @@ Operam diretamente nos bits individuais dos números.
 
 Java
 
-```
+```java
 int a = 5;  // 0101 em binário
 int b = 3;  // 0011 em binário
 

@@ -9,7 +9,7 @@ Utilizado para desvios lógicos baseados em condições verdadeiras ou falsas.
 
 Java
 
-```
+```java
 int idade = 18;
 
 if (idade < 16) {
@@ -34,7 +34,7 @@ Ideal para múltiplas escolhas baseadas em uma única variável (Inteiros, Strin
 
 Java
 
-```
+```java
 int dia = 2;
 switch (dia) {
     case 1 -> System.out.println("Segunda"); // Sintaxe moderna (Java 14+)
@@ -55,7 +55,7 @@ Verifica a condição **antes** de executar o bloco. Se for falsa de início, nu
 
 Java
 
-```
+```java
 int contador = 0;
 while (contador < 5) {
     System.out.println("Valor: " + contador);
@@ -69,7 +69,7 @@ Executa o bloco **ao menos uma vez**, pois a verificação ocorre no final.
 
 Java
 
-```
+```java
 int opcao;
 do {
     System.out.println("Executando menu...");
@@ -89,7 +89,7 @@ Dividido em: **Inicialização**; **Condição**; **Incremento**.
 
 Java
 
-```
+```java
 // (inicio; condição; passo)
 for (int i = 0; i < 10; i++) {
     System.out.println("Índice: " + i);
@@ -102,7 +102,7 @@ Utilizado para percorrer arrays ou coleções de forma simplificada.
 
 Java
 
-```
+```java
 String[] nomes = {"Java", "Python", "C#"};
 
 for (String nome : nomes) {

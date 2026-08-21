@@ -17,6 +17,8 @@ Uma Controller mapeia os verbos HTTP para métodos Java. Ela utiliza anotações
 
 **Exemplo de Controller Profissional:**
 
+
+
 ```java
 @RestController
 @RequestMapping("/gastos")
@@ -64,7 +66,9 @@ Em sistemas reais, nunca expomos a `@Entity` do banco de dados diretamente na Co
 
 **Exemplo de DTO Simples:**
 
-```java
+Java
+
+```
 // Apenas os dados que o usuário precisa ver
 public record GastoResponseDTO(Long id, String descricao, Double valor) {}
 ```
@@ -77,7 +81,9 @@ Um sistema profissional não permite que erros internos (Stacktraces) vazem para
 
 **Exemplo de Handler de Erros:**
 
-```java
+Java
+
+```
 @ControllerAdvice
 public class ErrorHandler {
 

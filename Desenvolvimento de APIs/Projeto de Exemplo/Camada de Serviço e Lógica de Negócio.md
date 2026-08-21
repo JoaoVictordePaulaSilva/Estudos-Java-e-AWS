@@ -21,9 +21,8 @@ Para que o Spring gerencie a Service, utilizamos a anotação `@Service`. Para q
 
 **Exemplo de Injeção:**
 
-Java
 
-```
+```java
 @Service
 public class GastoService {
 
@@ -44,9 +43,8 @@ Regras de negócio são restrições ou cálculos que definem como o sistema dev
 
 Antes de enviar o objeto para o Repository, a Service deve garantir que os dados são válidos.
 
-Java
 
-```
+```java
 public Gasto salvar(Gasto gasto) {
     if (gasto.getValor() <= 0) {
         throw new RuntimeException("O valor do gasto deve ser positivo.");
@@ -74,9 +72,8 @@ Como discutido, uma das melhores práticas em banco de dados é evitar a exclus�
 
 **Exemplo de código:**
 
-Java
 
-```
+```java
 public void excluirLogico(Long id) {
     // Busca o gasto ou lança erro se não encontrar
     Gasto gasto = repository.findById(id)
@@ -98,9 +95,8 @@ Ao utilizar o Soft Delete, a Service também se torna responsável por garantir 
 
 **Exemplo de listagem filtrada:**
 
-Java
 
-```
+```java
 public List<Gasto> listarSomenteAtivos() {
     return repository.findAll().stream()
             .filter(gasto -> gasto.isAtivo())
